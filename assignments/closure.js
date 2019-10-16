@@ -4,7 +4,16 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+const fullName = 'George Raymond';
 
+function myHead(head) {
+ const hairColor = 'Black';
+  function myChest(chest) {
+    console.log(`${fullName} chest is ${chest} and always ${head} is hair , which is ${hairColor}`);
+  }
+  myChest('hairy');
+}
+myHead('fade');
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
